@@ -196,7 +196,7 @@ void freelist(list_t **);
 size_t listlen(const list_t *);
 char **listtostrings(list_t *);
 size_t printlist(const list_t *);
-list_t *node_startswith(list_t *, char *, char);
+list_t *nodestartswith(list_t *, char *, char);
 ssize_t getnodeindex(list_t *, list_t *);
 
 int ischain(info_t *, char *, size_t *);
