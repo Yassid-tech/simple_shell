@@ -52,7 +52,7 @@ int i = 0, currpos = 0;
 char *path;
 if (!path_str)
 return (NULL);
-if ((_strlen(cmd) > 2) && starts_with(cmd, "./"))
+if ((_strlen(cmd) > 2) && startswith(cmd, "./"))
 {
 if (iscmd(info, cmd))
 return (cmd);
