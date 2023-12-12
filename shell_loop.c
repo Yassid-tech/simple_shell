@@ -68,7 +68,7 @@ builtin_table builtintbl[] = {
 for (j = 0; builtintbl[j].type; j++)
 if (_strcmp(info->argv[0], builtintbl[j].type) == 0)
 {
-info->linecount++;
+info->line_count++;
 builtinret = builtintbl[j].func(info);
 break;
 }
@@ -86,10 +86,10 @@ void findcmd(info_t *info)
 char *path = NULL;
 int j, k;
 info->path = info->argv[0];
-if (info->linecount_flag == 1)
+if (info->line_count_flag == 1)
 {
-info->linecount++;
-info->linecount_flag = 0;
+info->line_count++;
+info->line_count_flag = 0;
 }
 for (j = 0, k = 0; info->arg[j]; j++)
 if (!isdelim(info->arg[j], " \t\n"))
