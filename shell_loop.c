@@ -86,10 +86,10 @@ void findcmd(info_t *info)
 char *path = NULL;
 int j, k;
 info->path = info->argv[0];
-if (info->line_count_flag == 1)
+if (info->linecount_flag == 1)
 {
 info->line_count++;
-info->line_count_flag = 0;
+info->linecount_flag = 0;
 }
 for (j = 0, k = 0; info->arg[j]; j++)
 if (!isdelim(info->arg[j], " \t\n"))
