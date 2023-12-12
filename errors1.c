@@ -76,7 +76,7 @@ _eputs(info->fname);
 
 _eputs(": ");
 
-printd(info->linecount, STDERR_FILENO);
+printd(info->line_count, STDERR_FILENO);
 
 _eputs(": ");
 
