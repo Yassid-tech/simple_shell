@@ -88,7 +88,7 @@ return (1);
 
  */
 
-void checkchain(info_t *info, char *buf, size_t *p, size_t j, size_t len)
+void checkchain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 
 {
 
@@ -102,7 +102,7 @@ if (info->status)
 
 {
 
-buf[j] = 0;
+buf[i] = 0;
 
 j = len;
 
@@ -118,7 +118,7 @@ if (!info->status)
 
 {
 
-buf[j] = 0;
+buf[i] = 0;
 
 j = len;
 
